@@ -76,3 +76,9 @@
 ### Antes de fusionar los cambios, puedes revisarlos usando
 
 \$git diff <source_branch> <target_branch>
+
+## status
+
+### Ver el status de git
+
+\$git status
