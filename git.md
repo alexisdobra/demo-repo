@@ -19,8 +19,24 @@
 \$ git add <filename>
 \$ git add .
 
-##commit
+## commit
 
 ### Commitea los cambios, una vez realizado los archivos con cambios o nuevos serán agregados al HEAD, pero aun permanecerán en el repositorio local. (-m) se utiliza para agregar título y descripción, en caso de ir una sola referencia a la descripción
 
 \$git commit -m "Title" -m "Description"
+
+## push
+
+### Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta push, reemplaza master por la rama a la que quieres enviar tus cambios.
+
+\$git push origin master
+
+## add remote
+
+### Si no has clonado un repositorio ya existente y quieres conectar tu repositorio local a un repositorio remoto, luego podrás subir tus cambios al repositorio remoto seleccionado.
+
+\$git remote add origin <server>
+
+## branches
+
+###
