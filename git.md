@@ -2,8 +2,6 @@
 
 ## clone
 
-S
-
 ### Clona en el directorio local donde nos encontramos situados, una copia del repositorio indicado por URL o SSH key
 
 \$ git clone HTTP/SSH
