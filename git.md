@@ -39,4 +39,20 @@
 
 ## branches
 
-###
+### Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando creas un repositorio. Crea nuevas ramas durante el desarrollo y fusiónalas a la rama principal cuando termines.
+
+### Crea una nueva rama nueva y cámbiate a ella
+
+\$git checkout -b <name>
+
+### Muévete a una rama deseada
+
+\$git checkout <name>
+
+### Borra la rama
+
+\$git branch -d <name>
+
+### Una rama nueva no estará disponible para los demás a menos que subas (push) la rama a tu repositorio remoto
+
+\$git push origin <branch>
