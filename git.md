@@ -37,22 +37,42 @@
 
 \$git remote add origin <server>
 
-## branches
+## Branches
 
 ### Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando creas un repositorio. Crea nuevas ramas durante el desarrollo y fusiónalas a la rama principal cuando termines.
 
-### Crea una nueva rama nueva y cámbiate a ella
+### Crear una nueva rama nueva y cambiar a ella
 
-\$git checkout -b <name>
+\$git checkout -b <branch>
 
-### Muévete a una rama deseada
+### Cambiar a una rama deseada
 
-\$git checkout <name>
+\$git checkout <branch>
 
-### Borra la rama
+### Borrar rama
 
-\$git branch -d <name>
+\$git branch -d <branch>
 
 ### Una rama nueva no estará disponible para los demás a menos que subas (push) la rama a tu repositorio remoto
 
 \$git push origin <branch>
+
+## pull
+
+### Para actualizar tu repositorio local al commit más nuevo, se debe ejecutar pull en el directorio de trabajo para bajar y fusionar los cambios remotos
+
+\$git pull
+
+## merge
+
+### Se utiliza para fusionar otra rama a tu rama activa, git intentará fusionar automáticamente los cambios
+
+\$git merge <branch>
+
+### Desafortunadamente, no siempre será posible y se podrán producir conflictos. Tú eres responsable de fusionar esos conflictos manualmente al editar los archivos mostrados por git. Después de modificarlos, necesitas marcarlos como fusionados con
+
+\$git add <filename>
+
+### Antes de fusionar los cambios, puedes revisarlos usando
+
+\$git diff <source_branch> <target_branch>
