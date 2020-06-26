@@ -82,3 +82,57 @@
 ### Ver el status de git
 
 \$git status
+
+## Unstage files using git reset
+
+### The easiest way to unstage files on Git is to use the “git reset” command and specify the file you want to unstage.
+
+\$git reset <commit> -- <path>
+
+### By default, the commit parameter is optional : if you don’t specify it, it will be referring to HEAD.
+
+### This command will reset the index entries (the ones you added to your staging area) to their state at the specified commit (or HEAD if you didn’t specify any commits).
+
+## Unstage all files on Git
+
+### To unstage all files, use the “git reset” command without specifying any files or paths.
+
+\$ git reset
+
+## Remove unstaged changes on Git
+
+### In some cases, after unstaging files from your staging area, you may want to remove them completely.
+
+### In order to remove unstaged changes, use the “git checkout” command and specify the paths to be removed.
+
+\$ git checkout -- <path>
+
+### Alternatively, if you want to discard your entire working directory, head back to the root of your project and execute the following command.
+
+\$ git checkout -- .
+
+## Unstage commit on Git
+
+### In some cases, you actually committed files to your git directory (or repository) but you want to unstage them in order to make some modifications to your commit.
+
+## Unstage commits softly
+
+### To unstage commits on Git, use the “git reset” command with the “–soft” option and specify the commit hash.
+
+\$ git reset --soft <commit>
+
+### Alternatively, if you want to unstage your last commit, you can the “HEAD” notation in order to revert it easily.
+
+\$ git reset --soft HEAD~1
+
+### Using the “–soft” argument, changes are kept in your working directory and index.
+
+### As a consequence, your modifications are kept, they are just not in the Git repository anymore.
+
+## Unstage commits hardly
+
+### To unstage commits on Git and discard all changes, use the “git reset” command with the “–hard” argument.
+
+\$ git reset --hard <commit>
+
+### Note : be careful when using the reset hard command, you will lose all your changes when hard resetting.
